@@ -1,4 +1,4 @@
-package Part1;
+package Chapter1;
 // Iterator패턴 : 무엇인가 많이 모여 있을 떄 이를 순서대로 가리키며 전체를 검색하고 처리를 반복하는 것
 // Iterator : 무엇인가를 '반복하다'
 // Iterable<E> : 집합체를 나타내는 인터페이스 -> public abstract Iterator<E> iterator(); 라는 추상메서드를 가지고 있음
@@ -14,7 +14,6 @@ package Part1;
 
 // "추상 클래스나 인터페이스르 사용하여 프로그래밍한다"
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 public class IteratorEx {
     public static void main(String[] args) {
