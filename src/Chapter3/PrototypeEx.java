@@ -25,13 +25,9 @@ public class PrototypeEx {
         manager.register("warning box",mbox);
         manager.register("slash box",sbox);
         //생성과 사용
-        Product p2 = manager.showcase.get("warning box");
         Product p1 = manager.create("warning box");
-        MessageBox m = (MessageBox) p1;
-        MessageBox m2 = (MessageBox) p2;
-        m.arr[0] = 3;
-        m2.arr[0] = 4;
-        System.out.println(m.arr[0]);
+        Product p2 = manager.create("warning box");
+        System.out.println(p1.equals(p2));
         System.out.println(p1==p2);
 //        System.out.println(m.arr[0]);
 //        Product p2=manager.create("warning box");
@@ -54,15 +50,16 @@ public class PrototypeEx {
 //        p5.use("Hello, world");
 //        Product p6 = manager.create("slash box");
 //        p6.use("Hello, world");
+
     }
 }
 class MessageBox implements Product {
     private char decochar;
-    int i = 5;
-    int[] arr= new int[] {1,2,3};
-
     public MessageBox(char decochar) {
         this.decochar = decochar;
+    }
+    public MessageBox(MessageBox prototype) {
+        this.decochar = prototype.decochar;
     }
 
     @Override
@@ -82,11 +79,13 @@ class MessageBox implements Product {
     @Override
     public Product createCopy() {
         Product p = null;
-        try {
-            p=(Product) clone();
-            }catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            p=(Product) clone();
+//            }catch (CloneNotSupportedException e) {
+//            e.printStackTrace();
+//        }
+//        return p;
+        p = new MessageBox(this);
         return p;
     }
 }
@@ -95,6 +94,9 @@ class UnderlinePen implements Product {
 
     public UnderlinePen(char ulchar) {
         this.ulchar = ulchar;
+    }
+    public UnderlinePen(UnderlinePen prototype) {
+        this.ulchar = prototype.ulchar;
     }
 
     @Override

@@ -15,34 +15,52 @@ import java.util.List;
 
 public class CompositeEx {
     public static void main(String[] args) {
-        System.out.println("Making root entries,,,");
+//        System.out.println("Making root entries,,,");
+//        Directory rootdir = new Directory("root");
+//        Directory bindir = new Directory("bin");
+//        Directory tmpdir = new Directory("tmp");
+//        Directory usrdir = new Directory("usr");
+//        rootdir.add(bindir);
+//        rootdir.add(tmpdir);
+//        rootdir.add(usrdir);
+//        bindir.add(new File("vi",10000));
+//        bindir.add(new File("latex",20000));
+//        rootdir.printList();
+//        System.out.println();
+//        System.out.println("Making user entries,,,");
+//        Directory youngin = new Directory("youngjun");
+//        Directory gildong = new Directory("gildong");
+//        Directory dojun = new Directory("dojun");
+//        usrdir.add(youngin);
+//        usrdir.add(gildong);
+//        usrdir.add(dojun);
+//        youngin.add(new File("diary.html",100));
+//        youngin.add(new File("Composite.java",200));
+//        gildong.add(new File("memo.tex",300));
+//        dojun.add(new File("game.doc",400));
+//        dojun.add(new File("junk.mail",500));
+//        rootdir.printList();
         Directory rootdir = new Directory("root");
-        Directory bindir = new Directory("bin");
-        Directory tmpdir = new Directory("tmp");
         Directory usrdir = new Directory("usr");
-        rootdir.add(bindir);
-        rootdir.add(tmpdir);
         rootdir.add(usrdir);
-        bindir.add(new File("vi",10000));
-        bindir.add(new File("latex",20000));
+        Directory youngin = new Directory("youngjun");
+        usrdir.add(youngin);
+        File file = new File("Composite.java",100);
+        youngin.add(file);
         rootdir.printList();
         System.out.println();
-        System.out.println("Making user entries,,,");
-        Directory youngin = new Directory("youngjun");
-        Directory gildong = new Directory("gildong");
-        Directory dojun = new Directory("dojun");
-        usrdir.add(youngin);
-        usrdir.add(gildong);
-        usrdir.add(dojun);
-        youngin.add(new File("diary.html",100));
-        youngin.add(new File("Composite.java",200));
-        gildong.add(new File("memo.tex",300));
-        dojun.add(new File("game.doc",400));
-        dojun.add(new File("junk.mail",500));
-        rootdir.printList();
+        System.out.println("file ="+file.getFullName());
+        System.out.println("youngin ="+youngin.getFullName());
     }
 }
 abstract class Entry {
+    private Entry parent;
+
+    // 부모를 설정한다
+    protected void setParent(Entry parent) {
+        this.parent = parent;
+    }
+
     // 이름을 얻는다
     public abstract String getName();
 
@@ -53,12 +71,25 @@ abstract class Entry {
     public void printList() {
         printList("");
     }
+
     //prefix를 앞에 붙여서 목록을 표시한다
     protected abstract void printList(String prefix);
 
     // 문자열 표시
     public String toString() {
-        return getName()+" ("+getSize()+")";
+        return getName() + " (" + getSize() + ")";
+    }
+
+    // 전체 경로를 가져온다
+    public String getFullName() {
+        StringBuffer fullname = new StringBuffer();
+        Entry entry = this;
+        do {
+            fullname.append(entry.getName());
+            fullname.append("/");
+            entry = entry.parent;
+        } while (entry != null);
+        return fullname.toString();
     }
 }
 
@@ -85,7 +116,8 @@ class File extends Entry {
     protected void printList(String prefix) {
         System.out.println(prefix+"/"+this);
     }
-}
+    }
+
 
 class Directory extends Entry {
     private String name;
@@ -120,6 +152,7 @@ class Directory extends Entry {
     //디렉터리 엔트리를 디렉터리에 추가한다
     public Entry add(Entry entry) {
         directory.add(entry);
+        entry.setParent(this);
         return this;
     }
 }

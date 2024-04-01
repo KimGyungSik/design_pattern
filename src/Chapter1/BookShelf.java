@@ -9,7 +9,7 @@ public class  BookShelf implements Iterable<Book> {
 //    private int last = 0;
 
     public BookShelf(int maxsize) {
-        this.arrayList = new ArrayList<>(maxsize);
+        this.arrayList = new ArrayList<Book>(maxsize);
     }
 
     public Book getBookAt(int index) {

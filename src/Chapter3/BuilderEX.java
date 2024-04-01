@@ -14,20 +14,24 @@ package Chapter3;
 // Builder가 필기구 , TextBuilder가 연필이나 볼펜 => 구체적인 필기구를 전달하는 것이 의존성 주입
 public class BuilderEX {
     public static void main(String[] args) {
-        TextBuilder textBuilder = new TextBuilder();
-        Director director = new Director(textBuilder);
-        director.construct();
-        String result = textBuilder.getTextResult();
-        System.out.println(result);
-        HTMLBuilder htmlBuilder = new HTMLBuilder();
-        Director director1 = new Director(htmlBuilder);
-        director1.construct();
-        String result2 = htmlBuilder.getHTMLresult();
-        System.out.println(result2);
+//        TextBuilder textBuilder = new TextBuilder();
+//        Director director = new Director(textBuilder);
+//        director.construct();
+//        String result = textBuilder.getTextResult();
+//        System.out.println(result);
+//        HTMLBuilder htmlBuilder = new HTMLBuilder();
+//        Director director1 = new Director(htmlBuilder);
+//        director1.construct();
+//        String result2 = htmlBuilder.getHTMLresult();
+//        System.out.println(result2);
+
+        String a = "a";
+        String b = a+"b";
+        System.out.println(a==b);
     }
 }
 
-abstract class Builder {
+interface Builder {
     public abstract void makeTitle(String title);
     public abstract void makeString(String str);
     public abstract void makeItems(String[] items);
@@ -56,7 +60,7 @@ class Director {
     }
 }
 
-class TextBuilder extends Builder {
+class TextBuilder implements Builder {
     private StringBuffer sb = new StringBuffer();
 
     @Override
@@ -93,7 +97,7 @@ class TextBuilder extends Builder {
     }
 }
 
-class HTMLBuilder extends Builder {
+class HTMLBuilder implements Builder {
     private String filename = "untitled.html";
     private StringBuffer sb = new StringBuffer();
 
@@ -118,5 +122,32 @@ class HTMLBuilder extends Builder {
     }
     public String getHTMLresult() {
         return filename;
+    }
+}
+
+class EnglishBuilder implements Builder {
+    private StringBuffer sb = new StringBuffer();
+
+    @Override
+    public void makeTitle(String title) {
+
+    }
+
+    @Override
+    public void makeString(String str) {
+
+    }
+
+    @Override
+    public void makeItems(String[] items) {
+
+    }
+
+    @Override
+    public void close() {
+
+    }
+    public String getEnglishResult() {
+        return sb.toString();
     }
 }

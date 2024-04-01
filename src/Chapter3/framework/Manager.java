@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Manager {
-     public Map<String,Product> showcase = new HashMap<>();
+     private Map<String,Product> showcase = new HashMap<>();
 
     public void register(String name,Product prototype) {
         showcase.put(name,prototype);

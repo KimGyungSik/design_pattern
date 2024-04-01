@@ -11,3 +11,9 @@ public class Book {
         return name;
     }
 }
+class Book2 extends Book {
+
+    public Book2(String name) {
+        super(name);
+    }
+}

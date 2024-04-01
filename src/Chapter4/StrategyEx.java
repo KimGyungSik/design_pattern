@@ -3,38 +3,49 @@ package Chapter4;
 // 위임이라는 약한 결합을 사용하므로 알고리즘을 용이하게 전환할 수 있다
 // 위임을 이용하여 알고리즘 전환, 특히 동적 전환이 가능해짐
 
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class StrategyEx {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        int seed1 = s.nextInt();
-        int seed2 = s.nextInt();
-        Player player1 = new Player("KIM",new WinnningStrategy(seed1));
-        Player player2 = new Player("LEE",new ProbStrategy(seed2));
+//        Scanner s = new Scanner(System.in);
+//        int seed1 = s.nextInt();
+//        int seed2 = s.nextInt();
+//        Player player1 = new Player("KIM",new WinnningStrategy(seed1));
+//        Player player2 = new Player("LEE",new ProbStrategy(seed2));
+//
+//        for(int i=0; i<10000; i++) {
+//            Hand nextHand1 = player1.nextHand();
+//            Hand nextHand2 = player2.nextHand();
+//            if(nextHand1.isStrongThan(nextHand2)) {
+//                System.out.println("Winner:"+player1);
+//                player1.win();
+//                player2.lose();
+//            }else if(nextHand2.isStrongThan(nextHand1)) {
+//                System.out.println("Winner:"+player2);
+//                player1.lose();
+//                player2.win();
+//            }else {
+//                System.out.println("Even...");
+//                player1.even();
+//                player2.even();
+//            }
+//        }
+//        System.out.println("Total result:");
+//        System.out.println(player1);
+//        System.out.println(player2);
 
-        for(int i=0; i<10000; i++) {
-            Hand nextHand1 = player1.nextHand();
-            Hand nextHand2 = player2.nextHand();
-            if(nextHand1.isStrongThan(nextHand2)) {
-                System.out.println("Winner:"+player1);
-                player1.win();
-                player2.lose();
-            }else if(nextHand2.isStrongThan(nextHand1)) {
-                System.out.println("Winner:"+player2);
-                player1.lose();
-                player2.win();
-            }else {
-                System.out.println("Even...");
-                player1.even();
-                player2.even();
+
+        List<String> list = Arrays.asList("D","B","C","E","A");
+
+        list.sort(String.CASE_INSENSITIVE_ORDER);
+        System.out.println(list);
+        list.sort(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o2.compareTo(o1);
             }
-        }
-        System.out.println("Total result:");
-        System.out.println(player1);
-        System.out.println(player2);
-
+        });
+        System.out.println(list);
     }
 }
 

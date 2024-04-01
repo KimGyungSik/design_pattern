@@ -4,15 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c32ec2-486c-4b51-a97d-b1c94db1145d" name="Changes" comment="Adapter 패턴 - 서로 다른 두 개의 인터페이스(API) 사이에서 그 차이를 메우는 패턴">
-      <change afterPath="$PROJECT_DIR$/src/Chapter1/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter1/newfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter2/TemplateEX.java" afterDir="false" />
+    <list default="true" id="a0c32ec2-486c-4b51-a97d-b1c94db1145d" name="Changes" comment="Visitor 패턴 : 데이터 구조와 처리를 분리">
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/LimitSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/NoSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/OddSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/SpecialSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/Support.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/Trouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/corEx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/BookShelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/BookShelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/BookShelfIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/BookShelfIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Part1/IteratorEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/IteratorEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter1/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter1/BookShelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/BookShelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter1/IteratorEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/IteratorEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter3/BuilderEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter3/BuilderEX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter3/PrototypeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter3/PrototypeEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter3/framework/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter3/framework/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter4/BridgeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter4/BridgeEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter4/StrategyEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter4/StrategyEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter5/CompositeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter5/CompositeEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter5/DecoratorEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter5/DecoratorEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter6/Visitor/FileFindVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter6/Visitor/FileFindVisitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +56,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TemplateEX">
-    <configuration name="AdapterEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter1.AdapterEx" />
+  <component name="RunManager" selected="Application.corEx">
+    <configuration name="DecoratorEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter5.DecoratorEx" />
       <module name="GoF-Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.*" />
+          <option name="PATTERN" value="Chapter5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdapterTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter1.AdapterTest" />
+    <configuration name="IteratorEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter1.IteratorEx" />
       <module name="GoF-Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.*" />
+          <option name="PATTERN" value="Chapter1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +83,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateEX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter2.TemplateEX" />
+    <configuration name="StrategyEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter4.StrategyEx" />
       <module name="GoF-Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter2.*" />
+          <option name="PATTERN" value="Chapter4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VisitorEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.Visitor.VisitorEx" />
+      <module name="GoF-Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chapter6.Visitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="corEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter6.ChainofResponsibility.corEx" />
+      <module name="GoF-Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chapter6.ChainofResponsibility.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,9 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TemplateEX" />
-        <item itemvalue="Application.AdapterTest" />
-        <item itemvalue="Application.AdapterEx" />
+        <item itemvalue="Application.corEx" />
+        <item itemvalue="Application.VisitorEx" />
+        <item itemvalue="Application.StrategyEx" />
+        <item itemvalue="Application.IteratorEx" />
+        <item itemvalue="Application.DecoratorEx" />
       </list>
     </recent_temporary>
   </component>
@@ -116,12 +155,124 @@
       <option name="project" value="LOCAL" />
       <updated>1706678730438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Temlate Method 패턴 - 상위 클래스에서 처리의 뼈대를 결정하고 하위 클래스에서 그 구체적 내용을 결정하는 패턴">
+      <created>1706756442073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706756442073</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Factory Method 패턴 : 인스턴스를 생성하는 공장을 Temlate Method패턴으로 구성한 것">
+      <created>1706860937776</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706860937776</updated>
+    </task>
+    <task id="LOCAL-00005" summary="SingleTon 패턴 : 인스턴스가 하나만 존재하는 것을 보증하는 패턴">
+      <created>1707117272465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707117272465</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Prototype 패턴 : 인스턴스를 복사해서 새 인스턴스를 만드는 것">
+      <created>1707222759276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222759276</updated>
+    </task>
+    <task id="LOCAL-00007" summary="얇은 복사와 깊은 복사에 대한 예제">
+      <created>1707276785758</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707276785758</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Builder 패턴 : 구조를 가진 인스턴스를 만들어 가는 패턴">
+      <created>1707284379197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707284379197</updated>
+    </task>
+    <task id="LOCAL-00009" summary="AbstractFactory패턴 : 추상적인 공장에서 추상적인 부품을 조합하여 추상적인 제품을 만들어낸다">
+      <created>1707392217355</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707392217355</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Bridge패턴 : 기능의 클래스 계층과 구현의 클래스 계층을 연결하는 다리, 포함관계(약한 결합)">
+      <created>1707823415249</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707823415249</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Strategy패턴 : 위임을 활용한 알고리즘 전환, 같은 문제를 다른 방법으로 해결하기 쉽게 만들어 주는 패턴">
+      <created>1707929980197</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707929980197</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Composite 패턴 : 그릇과 내용물을 동일시하여 재귀적인 구조를 만드는 패턴">
+      <created>1708344254670</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708344254670</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Decorator패턴 : 객체에 점점 장식을 더해 가는 디자인 패턴">
+      <created>1708516291900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708516291901</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Visitor 패턴 : 데이터 구조와 처리를 분리">
+      <created>1711270880912</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711270880912</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Iterator 패턴" />
     <MESSAGE value="Adapter 패턴 - 서로 다른 두 개의 인터페이스(API) 사이에서 그 차이를 메우는 패턴" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adapter 패턴 - 서로 다른 두 개의 인터페이스(API) 사이에서 그 차이를 메우는 패턴" />
+    <MESSAGE value="Temlate Method 패턴 - 상위 클래스에서 처리의 뼈대를 결정하고 하위 클래스에서 그 구체적 내용을 결정하는 패턴" />
+    <MESSAGE value="Factory Method 패턴 : 인스턴스를 생성하는 공장을 Temlate Method패턴으로 구성한 것" />
+    <MESSAGE value="SingleTon 패턴 : 인스턴스가 하나만 존재하는 것을 보증하는 패턴" />
+    <MESSAGE value="Prototype 패턴 : 인스턴스를 복사해서 새 인스턴스를 만드는 것" />
+    <MESSAGE value="얇은 복사와 깊은 복사에 대한 예제" />
+    <MESSAGE value="Builder 패턴 : 구조를 가진 인스턴스를 만들어 가는 패턴" />
+    <MESSAGE value="AbstractFactory패턴 : 추상적인 공장에서 추상적인 부품을 조합하여 추상적인 제품을 만들어낸다" />
+    <MESSAGE value="Bridge패턴 : 기능의 클래스 계층과 구현의 클래스 계층을 연결하는 다리, 포함관계(약한 결합)" />
+    <MESSAGE value="Strategy패턴 : 위임을 활용한 알고리즘 전환, 같은 문제를 다른 방법으로 해결하기 쉽게 만들어 주는 패턴" />
+    <MESSAGE value="Composite 패턴 : 그릇과 내용물을 동일시하여 재귀적인 구조를 만드는 패턴" />
+    <MESSAGE value="Decorator패턴 : 객체에 점점 장식을 더해 가는 디자인 패턴" />
+    <MESSAGE value="Visitor 패턴 : 데이터 구조와 처리를 분리" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visitor 패턴 : 데이터 구조와 처리를 분리" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GoF_Practice$AbstractFactoryEx.ic" NAME="AbstractFactoryEx Coverage Results" MODIFIED="1707389447931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Chapter3.*</FILTER>
+    </SUITE>
   </component>
 </project>

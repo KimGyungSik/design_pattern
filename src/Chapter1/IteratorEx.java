@@ -22,6 +22,7 @@ public class IteratorEx {
         bookShelf.appendBook(new Book("Bible"));
         bookShelf.appendBook(new Book("Cinderella"));
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+        bookShelf.appendBook(new Book2("Fuck"));
 
         //명시적으로 Iterator를 사용하는 방법 -> 변경사항이 생겨도 이 while문은 변경 x
         Iterator<Book> it = bookShelf.iterator();

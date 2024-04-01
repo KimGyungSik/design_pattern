@@ -16,7 +16,7 @@ public class FileFindVisitor extends Visitor{
     }
 
     // List목록에 대한 접근을 위한 Iterator
-    public List<File> getFoundFiles() {
+    public Iterable<File> getFoundFiles() {
         return fileList;
     }
     // File 방문 시

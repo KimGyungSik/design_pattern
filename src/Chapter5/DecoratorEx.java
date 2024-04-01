@@ -1,6 +1,7 @@
-package Chapter5;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 //Decorator 패턴 : 객체에 점점 장식을 더해 가는 디자인 패턴
@@ -15,26 +16,36 @@ import java.util.List;
 // ConcreteDecorator 역 : 구제척인 Decorator, SideBorder클래스와 FullBorder클래스
 public class DecoratorEx {
     public static void main(String[] args) {
-        Display b1 = new StringDisplay("Hello, world");
-        Display b2 = new UpDownBorder(b1,'-');
-        Display b3 = new SideBorder(b2,'*');
-        b1.show();
-        b2.show();
-        b3.show();
-        Display b4 = new SideBorder(
-                new FullBorder(
-                        new FullBorder(
-                                new SideBorder(
-                                        new FullBorder(
-                                                new StringDisplay("Hello, world")
-                                        ),
-                                        '*'
-                                )
-                        )
-                ),
-                '/'
-        );
-        b4.show();
+        MultiStringDisplay mb = new MultiStringDisplay();
+        mb.add("Hi!");
+        mb.add("Good morning");
+        mb.add("Good night");
+        mb.show();
+
+        Display d1 = new SideBorder(mb,'#');
+        d1.show();
+        Display d2 = new FullBorder(mb);
+        d2.show();
+//        Display b1 = new StringDisplay("Hello, world");
+//        Display b2 = new UpDownBorder(b1,'-');
+//        Display b3 = new SideBorder(b2,'*');
+//        b1.show();
+//        b2.show();
+//        b3.show();
+//        Display b4 = new SideBorder(
+//                new FullBorder(
+//                        new FullBorder(
+//                                new SideBorder(
+//                                        new FullBorder(
+//                                                new StringDisplay("Hello, world")
+//                                        ),
+//                                        '*'
+//                                )
+//                        )
+//                ),
+//                '/'
+//        );
+//        b4.show();
     }
 }
 abstract class Display{
@@ -71,6 +82,55 @@ class StringDisplay extends Display {
             throw new IndexOutOfBoundsException();
         }
         return string;
+    }
+}
+class MultiStringDisplay extends Display {
+    private List<String> stringList;
+    private int maxLength; // 최대 문자열 길이
+    public MultiStringDisplay() {
+        stringList = new ArrayList<>();
+    }
+    public void add(String string) {
+        stringList.add(string);
+        // 문자열의 크기를 저장
+        int stringLength = string.length();
+        // 들어오는 문자열의 크기와 비교해서 최대 문자열 길이를 갱신함
+        if(maxLength<stringLength)
+            maxLength = stringLength;
+        setList();
+    }
+    // 최대 문자열 길이보다 작은 문자열들은 그 크기에 맞춰서 공백을 채워야함
+    private void setList() {
+        for(int i=0; i<getRows(); i++) {
+            if(maxLength > stringList.get(i).length()) {
+                // 모자란 크기
+                int limit = maxLength - stringList.get(i).length();
+                spacePull(limit,i);
+            }
+        }
+    }
+    // 모자란 크기만큼 공백채워줘서 리스트에 저장하기
+    private void spacePull(int limit,int index) {
+        StringBuffer sb = new StringBuffer();
+        for(int i=0; i<limit; i++) {
+            sb.append(" ");
+        }
+        stringList.set(index,stringList.get(index)+sb.toString());
+    }
+    @Override
+    public int getColumns() {
+        // list중 가장 긴 문자열의 크기로 반환해야함
+        return maxLength;
+    }
+
+    @Override
+    public int getRows() {
+        return stringList.size();
+    }
+
+    @Override
+    public String getRowText(int row) {
+        return stringList.get(row);
     }
 }
 abstract class Border extends Display {
