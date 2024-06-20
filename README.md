@@ -46,6 +46,10 @@
 ## :pushpin: 3. Prototype 패턴
 
 ## :star:  인스턴스를 복사해서 새 인스턴스를 만드는 패턴
+
+![KakaoTalk_20240617_175524879_01](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/9ac460a2-db8d-4df7-8258-54c5ce708524)
+
+
 * ### 왜 `Prototype`이  필요한 것일까?
   > * ### 종류가 너무 많아 클래스로 정리할 수 없는 경우
   >   * 클래스 수가 많아지면 소스 프로그램을 관리하기 어려움
@@ -71,6 +75,9 @@
 ## :pushpin: 4. Iterator 패턴
 
 ## :star:  for문의 조건식을 이동시켜 반복하는 패턴
+
+![KakaoTalk_20240617_175524879](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/f7c41e6e-7e2c-4f2c-bbff-3af9565d6d99)
+
 * ### 자주 변경되는 부분을 분리하여 변경에 유리한 코드를 만듬
   ````java
   // 루프 변수 i를 사용한 예
@@ -103,6 +110,9 @@
 
 ## :star:  상위 클래스에서 처리의 뼈대를 결정하고 하위 클래스에서 그 구체적 내용을 결정하는 패턴
 
+![KakaoTalk_20240617_175946046_01](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/381cc9d0-bc29-4ed4-92d9-5a07200f9f3e)
+
+
 * ### 변하지 않는 부분을 상위 클래스에 두고 변하는 부분을 추상메서드로 정의해둬서, 상속을 통해 완성
 * ### IoC(제어의 역전)개념을 활용
   * ##### 모든 종류의 작업을 사용하는 쪽에서 제어 
@@ -121,6 +131,8 @@
 
 ## :star:  자주 변경되는 코드를 매개변수를 통해 외부에서 공급받는(의존성 주입) 패턴
 
+![KakaoTalk_20240617_175946046](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/4096985a-3ead-4a40-a5dc-97a97aee0d52)
+
 * ### 변하는 것과 변하지 않는 것의 분리
   *  ##### 자주 변하는 코드를 외부로 분리하여 의존성 주입을 통해 알고리즘 전체를 변경(교체)
 * ### 브릿지 패턴과 차이점
@@ -134,6 +146,10 @@
 ## :pushpin: 7. Bridge 패턴
 
 ## :star:  기능의 클래스 계층과 구현의 클래스 계층의 분리
+
+
+![KakaoTalk_20240617_182605630](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/3b677785-adae-4ef0-b804-cc537902c482)
+
 
 * ### n개의 추상메서드를 인터페이스로 추출하여 기능과 구현을 분리 
   * ### 각 계층은 독립적으로 확장이 가능함
@@ -175,6 +191,8 @@
 ## :pushpin: 8. State 패턴
 
 ## :star:  조건을 클래스로 정의
+
+![KakaoTalk_20240617_182605630_01](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/7acad7f1-ad6b-4ed7-8c44-b38389c0db05)
 
 * ### if문의 조건은 변경되거나 추가될 위험이 있음
 * ### 그래서 변하는 부분인 조건을 클래스로 정의하여 분리
@@ -248,6 +266,10 @@ class Sorter {
 
 ## :star:  그릇과 내용물을 동일시하여 재귀적인 구조를 만드는 패턴
 
+
+![KakaoTalk_20240617_182605630_03](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/2ca0cb5a-8cd5-4ff2-b135-8a650ebc46e2)
+
+
 * ### 디렉터리와 파일은 서로 다르지만, 둘다 디렉터리 안에 넣을 수 있음
 * ### 디렉터리와 파일을 합쳐서 `디렉터리 엔트리`라고 부름
 * ### 트리 구조로 된 데이터 구조가 Composite 패턴에 해당됨
@@ -258,6 +280,9 @@ class Sorter {
 ## :pushpin: 10. Decorator 패턴
 
 ## :star:  장식틀과 내용물을 동일시하는 패턴
+
+![KakaoTalk_20240617_182605630_02](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/a08ae4ee-80ed-4b28-afc5-c1900a8bd994)
+
 
 * ### 껍데기와 알맹이를 분리했다가 알맹이를 주입(전략패턴)받아서 합치기
 * ```` java
@@ -283,6 +308,10 @@ class Sorter {
 ## :pushpin: 11. Proxy 패턴
 
 ## :star:  어떤 객체에 대한 접근을 제어하는 용도로 대리인에 해당하는 객체를 제공하는 패턴
+
+
+![KakaoTalk_20240618_195732610](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/6ce94391-f177-4ae1-b1d5-123a86cec7e8)
+
 
 * ### Proxy 역할이 대리인이 되어 가능한 한 처리를 대신함
   * ### 실생활에 비유하자면 연예인을 섭외하기 위해서 연예인에게 직접 전화를 거는 것이 아니라 매니저에게 전화를 걸어 섭외하는 것
