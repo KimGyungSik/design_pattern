@@ -349,6 +349,10 @@ class Sorter {
 
 ## :star:  여러개의 명렁들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
 
+![KakaoTalk_20240620_231800819](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd)
+
+
+
 * ### 명령의 집합을 저장해서 관리
   * ### 명령어들이 스택에 쌓이게 되는데, 같은 타입으로 취급하여 스택에 쌓임
   * ### 즉 내용과 그릇을 동일시 취급하는 Composite패턴과 유사함
