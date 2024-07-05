@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c32ec2-486c-4b51-a97d-b1c94db1145d" name="Changes" comment="Visitor 패턴 : 데이터 구조와 처리를 분리">
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/LimitSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/NoSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/OddSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/SpecialSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/Support.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/Trouble.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/corEx.java" afterDir="false" />
+    <list default="true" id="a0c32ec2-486c-4b51-a97d-b1c94db1145d" name="Changes" comment="readme update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter1/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter1/BookShelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/BookShelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter1/IteratorEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter1/IteratorEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter3/BuilderEX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter3/BuilderEX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter3/PrototypeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter3/PrototypeEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter3/framework/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter3/framework/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter4/BridgeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter4/BridgeEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter4/StrategyEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter4/StrategyEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter5/CompositeEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter5/CompositeEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter5/DecoratorEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter5/DecoratorEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chapter6/Visitor/FileFindVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter6/Visitor/FileFindVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/Support.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter6/ChainofResponsibility/Support.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chapter9/Flyweight/BigCharFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chapter9/Flyweight/BigCharFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -44,6 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2besKSPnApQa5kFofBM04aQl8kY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,30 +41,34 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.VectorTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.corEx">
-    <configuration name="DecoratorEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter5.DecoratorEx" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Chapter8.State" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.VectorTest">
+    <configuration name="StateEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter8.State.StateEx" />
       <module name="GoF-Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Chapter5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IteratorEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Chapter1.IteratorEx" />
-      <module name="GoF-Practice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Chapter1.*" />
+          <option name="PATTERN" value="Chapter8.State.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,6 +82,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Chapter4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VectorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Chapter9.Proxy.VectorTest" />
+      <module name="GoF-Practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Chapter9.Proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,13 +130,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VectorTest" />
+        <item itemvalue="Application.StateEx" />
         <item itemvalue="Application.corEx" />
         <item itemvalue="Application.VisitorEx" />
         <item itemvalue="Application.StrategyEx" />
-        <item itemvalue="Application.IteratorEx" />
-        <item itemvalue="Application.DecoratorEx" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -140,6 +153,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706586816353</updated>
+      <workItem from="1718550770736" duration="5113000" />
+      <workItem from="1718586675329" duration="20031000" />
+      <workItem from="1718688949449" duration="32000" />
+      <workItem from="1718697018096" duration="4706000" />
+      <workItem from="1718711929195" duration="4602000" />
+      <workItem from="1718759232371" duration="2830000" />
+      <workItem from="1718795264107" duration="19000" />
+      <workItem from="1718889500566" duration="3166000" />
+      <workItem from="1718961326261" duration="783000" />
+      <workItem from="1719137695376" duration="4061000" />
+      <workItem from="1719193321693" duration="141000" />
+      <workItem from="1720156605291" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="Iterator 패턴">
       <created>1706598167429</created>
@@ -239,8 +264,95 @@
       <option name="project" value="LOCAL" />
       <updated>1711270880912</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Chain of Responsibility 패턴 : 여러 객체를 사슬(chain)처럼 연쇄적으로 묶고, 객체 사슬을 차례대로 돌면서 객체를 결정하는 방법">
+      <created>1711930864959</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711930864959</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Flyweight패턴">
+      <created>1718100310430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718100310430</updated>
+    </task>
+    <task id="LOCAL-00017" summary="readme 수정">
+      <created>1718106690120</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718106690120</updated>
+    </task>
+    <task id="LOCAL-00018" summary="State 패턴">
+      <created>1718360109595</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1718360109595</updated>
+    </task>
+    <task id="LOCAL-00019" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1718550834497</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1718550834497</updated>
+    </task>
+    <task id="LOCAL-00020" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1718558757704</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1718558757704</updated>
+    </task>
+    <task id="LOCAL-00021" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1718614222949</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718614222949</updated>
+    </task>
+    <task id="LOCAL-00022" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1718708259339</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1718708259339</updated>
+    </task>
+    <task id="LOCAL-00023" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1718708431727</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718708431727</updated>
+    </task>
+    <task id="LOCAL-00024" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1718893246765</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718893246765</updated>
+    </task>
+    <task id="LOCAL-00025" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1719142309904</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1719142309904</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -268,7 +380,12 @@
     <MESSAGE value="Composite 패턴 : 그릇과 내용물을 동일시하여 재귀적인 구조를 만드는 패턴" />
     <MESSAGE value="Decorator패턴 : 객체에 점점 장식을 더해 가는 디자인 패턴" />
     <MESSAGE value="Visitor 패턴 : 데이터 구조와 처리를 분리" />
-    <option name="LAST_COMMIT_MESSAGE" value="Visitor 패턴 : 데이터 구조와 처리를 분리" />
+    <MESSAGE value="Chain of Responsibility 패턴 : 여러 객체를 사슬(chain)처럼 연쇄적으로 묶고, 객체 사슬을 차례대로 돌면서 객체를 결정하는 방법" />
+    <MESSAGE value="Flyweight패턴" />
+    <MESSAGE value="readme 수정" />
+    <MESSAGE value="State 패턴" />
+    <MESSAGE value="readme update" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GoF_Practice$AbstractFactoryEx.ic" NAME="AbstractFactoryEx Coverage Results" MODIFIED="1707389447931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

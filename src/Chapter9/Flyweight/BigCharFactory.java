@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class BigCharFactory {
     // 이미 만든 BigChar 인스턴스를 관리
-    private Map<String, BigChar> pool = new HashMap<>();
+    private final static Map<String, BigChar> pool = new HashMap<>();
     // Singleton 패턴
     private static BigCharFactory singleton = new BigCharFactory();
 
