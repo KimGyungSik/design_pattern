@@ -375,7 +375,7 @@ class Sorter {
   * ### 명령어를 클래스로 분리함
 ---
 
-## :pushpin: 12. Observer 패턴
+## :pushpin: 13. Observer 패턴
 
 ## :star: 관찰자(Observer)에게 상태 변화를 알려주는 패턴
 
