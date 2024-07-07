@@ -13,7 +13,22 @@
   * ### 클래스의 역할(기능)
     * 어느 클래스가 어느 메소드를 사용할 수 있는지(사용해도 좋은지)
 
+-----
+##  :scroll: 목차
 
+1. [Singleton 패턴](#pushpin-1-singleton-패턴)
+2. [Flyweight 패턴](#pushpin-2-flyweight-패턴)
+3. [Prototype 패턴](#pushpin-3-prototype-패턴)
+4. [Iterator 패턴](#pushpin-4-iterator-패턴)
+5. [Template Method 패턴](#pushpin-5-template-method-패턴)
+6. [Strategy 패턴](#pushpin-6-strategy-패턴)
+7. [Bridge 패턴](#pushpin-7-bridge-패턴)
+8. [State 패턴](#pushpin-8-state-패턴)
+9. [Composite 패턴](#pushpin-9-composite-패턴)
+10. [Decorator 패턴](#pushpin-10-decorator-패턴)
+11. [Proxy 패턴](#pushpin-11-proxy-패턴)
+12. [Command 패턴](#pushpin-12-command-패턴)
+13. [Observer 패턴](#pushpin-13-observer-패턴)
 
 -----
 
