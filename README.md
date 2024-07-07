@@ -379,8 +379,14 @@ class Sorter {
 
 ## :star: 관찰자(Observer)에게 상태 변화를 알려주는 패턴
 
+![KakaoTalk_20240705_143648590](https://github.com/KimGyungSik/design_pattern/assets/139200972/b4f8e915-51ea-446d-82c7-ed706c33b2cb)
+
+
+
   * ###  관찰 대상(객체)의 상태 변화를 관찰자(Observer)에게 알린다
     * ### 상태가 변하면 관찰자를 호출(메서드)하여 관찰자가 상태 변화에 따른 작업처리를 함
+    * ![KakaoTalk_20240705_144256508](https://github.com/KimGyungSik/design_pattern/assets/139200972/cbac054d-00c2-4ca0-ab59-9c943754992d)
+    * ![KakaoTalk_20240705_145328348](https://github.com/KimGyungSik/design_pattern/assets/139200972/b2f7d2e3-814b-41e9-a68a-d0a7c0eef0d7)
     * ### 상태 변화에 따라 작업 처리를 n개로 확장할 수 있음 -> OCP 충족
   * ### MVC 패턴과 유사
     * ### Model과 View의 관계는 관찰대상과 관찰자 관계에 대응함
