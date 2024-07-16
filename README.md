@@ -29,8 +29,8 @@
 - [Strategy 패턴](#pushpin-strategy-패턴)
 - [Bridge 패턴](#pushpin-bridge-패턴)
 - [State 패턴](#pushpin-state-패턴)
-- [Visitor 패턴](#pushpin-visitor-패턴)
 - [Adapter 패턴](#pushpin-adapter-패턴)
+- [Visitor 패턴](#pushpin-visitor-패턴)
 > ###  :bookmark: 03. 동일시 취급(6)  
 - [Composite 패턴](#pushpin-composite-패턴)
 - [Decorator 패턴](#pushpin-decorator-패턴)
@@ -115,6 +115,14 @@
 * ### Flyweight 패턴과의 차이점
   > * ###  Prototype 패턴에서는 현재 인스턴스와 동일한 상태의 별도의 인스턴스를 만들어 이용
   > * ###  Flyweight 패턴에서는 하나의 인스턴스를 여러 장소에서 공유하여 이용함 
+
+---
+## :pushpin: Builder 패턴
+
+## :star:  인스턴스를 복사해서 새 인스턴스를 만드는 패턴
+
+
+
 
 ---
 
@@ -306,7 +314,18 @@ class Sorter {
 }
 ```
 ---
+## :pushpin: Adapter 패턴
 
+## :star: '이미 제공된 것'과 '필요한 것'사이의 '차이'를 메우는 패턴
+
+* ### 무엇인가를 포장해서 다른 용도로 사용할 수 있도록 변환해주는 것이 어댑터
+* ### 클래스를 부품으로써 재사용하고 싶을 떄 
+
+
+
+
+
+---
 
 ## :pushpin: Composite 패턴
 
