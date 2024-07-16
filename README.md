@@ -16,23 +16,39 @@
 -----
 ##  :scroll: 목차
 
-1. [Singleton 패턴](#pushpin-1-singleton-패턴)
-2. [Flyweight 패턴](#pushpin-2-flyweight-패턴)
-3. [Prototype 패턴](#pushpin-3-prototype-패턴)
-4. [Iterator 패턴](#pushpin-4-iterator-패턴)
-5. [Template Method 패턴](#pushpin-5-template-method-패턴)
-6. [Strategy 패턴](#pushpin-6-strategy-패턴)
-7. [Bridge 패턴](#pushpin-7-bridge-패턴)
-8. [State 패턴](#pushpin-8-state-패턴)
-9. [Composite 패턴](#pushpin-9-composite-패턴)
-10. [Decorator 패턴](#pushpin-10-decorator-패턴)
-11. [Proxy 패턴](#pushpin-11-proxy-패턴)
-12. [Command 패턴](#pushpin-12-command-패턴)
-13. [Observer 패턴](#pushpin-13-observer-패턴)
+> ###  :bookmark: 01. 인스턴스를 효율적으로 생성(6)  
+- [Singleton 패턴](#pushpin-singleton-패턴)
+- [Flyweight 패턴](#pushpin-flyweight-패턴)
+- [Prototype 패턴](#pushpin-prototype-패턴)
+- [Builder 패턴](#pushpin-builder-패턴)
+- [Factory Method 패턴](#pushpin-factory-Method-패턴)
+- [Abstract Factory 패턴](#pushpin-abstract-Factory-패턴)
+> ###  :bookmark: 02. 변경되는 부분을 분리(7)  
+- [Iterator 패턴](#pushpin-iterator-패턴)
+- [Template Method 패턴](#pushpin-template-method-패턴)
+- [Strategy 패턴](#pushpin-strategy-패턴)
+- [Bridge 패턴](#pushpin-bridge-패턴)
+- [State 패턴](#pushpin-state-패턴)
+- [Visitor 패턴](#pushpin-visitor-패턴)
+- [Adapter 패턴](#pushpin-adapter-패턴)
+> ###  :bookmark: 03. 동일시 취급(6)  
+- [Composite 패턴](#pushpin-composite-패턴)
+- [Decorator 패턴](#pushpin-decorator-패턴)
+- [Proxy 패턴](#pushpin-proxy-패턴)
+- [Command 패턴](#pushpin-command-패턴)
+- [Chain Of Responsibility 패턴](#pushpin-chain-of-responsibility-패턴)
+- [Interpreter 패턴](#pushpin-Interpreter-패턴)
+> ###  :bookmark: 04. 인스턴스를 관측과 단순화(4)  
+- [Observer 패턴](#pushpin-13-observer-패턴)
+- [Facade 패턴](#pushpin-facade-패턴)
+- [Mediator 패턴](#pushpin-mediator-패턴)
+- [Memento 패턴](#pushpin-memento-패턴)
+
+
 
 -----
 
-## :pushpin: 1. Singleton 패턴
+## :pushpin: Singleton 패턴
 
 ## :star:  단 하나의 유일한 객체를 만들기 위한 패턴
 * ### 인스턴스 수를 1개로 제한 why? 자원(메모리)을 아끼기 위해서
@@ -55,7 +71,7 @@
 
 ---
 
-## :pushpin: 2. Flyweigth 패턴
+## :pushpin: Flyweigth 패턴
 
 ## :star:  n개의 인스턴스를 한번만 생성하고 등록하여 공유하는 패턴
 * ### 싱글톤의 확장버전 ( 싱글톤은 1개 , 플라이웨이트는 n개 )
@@ -73,7 +89,7 @@
 ---
 
 
-## :pushpin: 3. Prototype 패턴
+## :pushpin: Prototype 패턴
 
 ## :star:  인스턴스를 복사해서 새 인스턴스를 만드는 패턴
 
@@ -102,7 +118,7 @@
 
 ---
 
-## :pushpin: 4. Iterator 패턴
+## :pushpin: Iterator 패턴
 
 ## :star:  for문의 조건식을 이동시켜 반복하는 패턴
 
@@ -136,7 +152,7 @@
   즉, 어떤 구현체가 와도 iterator메서드를 가지고 있고, 올바른 Iterator<Book>을 반환하면 됨 
 
 ---
-## :pushpin: 5. Template Method 패턴
+## :pushpin: Template Method 패턴
 
 ## :star:  상위 클래스에서 처리의 뼈대를 결정하고 하위 클래스에서 그 구체적 내용을 결정하는 패턴
 
@@ -156,7 +172,7 @@
   * ##### 템플릿 메서드 패턴은 1개의 추상메서드를 다루지만
   * ##### 브릿지 패턴은 n개의 추상메서드를 인터페이스로 추출하여 선언(기능)과 구현을 분리한 형태
 ---
-## :pushpin: 6. Strategy 패턴
+## :pushpin: Strategy 패턴
 
 
 ## :star:  자주 변경되는 코드를 매개변수를 통해 외부에서 공급받는(의존성 주입) 패턴
@@ -173,7 +189,7 @@
 
 
 ---
-## :pushpin: 7. Bridge 패턴
+## :pushpin: Bridge 패턴
 
 ## :star:  기능의 클래스 계층과 구현의 클래스 계층의 분리
 
@@ -218,7 +234,7 @@
 
 
 ---
-## :pushpin: 8. State 패턴
+## :pushpin: State 패턴
 
 ## :star:  조건을 클래스로 정의
 
@@ -292,7 +308,7 @@ class Sorter {
 ---
 
 
-## :pushpin: 9. Composite 패턴
+## :pushpin: Composite 패턴
 
 ## :star:  그릇과 내용물을 동일시하여 재귀적인 구조를 만드는 패턴
 
@@ -307,7 +323,7 @@ class Sorter {
 
 
 ---
-## :pushpin: 10. Decorator 패턴
+## :pushpin: Decorator 패턴
 
 ## :star:  장식틀과 내용물을 동일시하는 패턴
 
@@ -335,7 +351,7 @@ class Sorter {
   Border : 껍데기
   StringDisplay : 알맹이
 ---
-## :pushpin: 11. Proxy 패턴
+## :pushpin: Proxy 패턴
 
 ## :star:  어떤 객체에 대한 접근을 제어하는 용도로 대리인에 해당하는 객체를 제공하는 패턴
 
@@ -360,7 +376,7 @@ class Sorter {
   * ### 핵심 기능과 부가 기능을 분리하여 실행되는 과정에서 합쳐짐
 
 ---
-## :pushpin: 12. Command 패턴
+## :pushpin: Command 패턴
 
 ## :star:  여러개의 명렁들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
 
@@ -375,7 +391,7 @@ class Sorter {
   * ### 명령어를 클래스로 분리함
 ---
 
-## :pushpin: 13. Observer 패턴
+## :pushpin: Observer 패턴
 
 ## :star: 관찰자(Observer)에게 상태 변화를 알려주는 패턴
 
