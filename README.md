@@ -331,8 +331,11 @@ class Sorter {
 
 ## :star: '데이터 구조'와 '처리'를 분리한 패턴
 
+<img src="https://github.com/user-attachments/assets/842ad19d-c60a-4dae-974d-8f4a9241c51e" width="500">
+
 * ### 더블 디스패치
   * #### visit 메서드와 accpet 메서드가 서로 상대방을 호출 (일반적인 재귀적 호출과 다름)
+  * <img src="https://github.com/user-attachments/assets/6929f26b-e015-4bdc-bbc3-1fbf17b706a5" width="500">
 * ### '데이터 구조'와 '처리'는 독립적으로 개발이 가능
   * #### '데이터 구조'의 집합을 부품으로서의 독립성을 높여줌
   * #### 새로운 '처리'를 추가할때마다 '데이터 구조'를 수정할 필요가 없어짐 -> 'OCP'충족
