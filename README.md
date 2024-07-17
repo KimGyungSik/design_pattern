@@ -318,6 +318,9 @@ class Sorter {
 
 ## :star: '이미 제공된 것'과 '필요한 것'사이의 '차이'를 메우는 패턴
 
+ <img src="https://github.com/user-attachments/assets/d4f94f5b-782e-4f93-b242-72e08c0405d5" width="500">
+
+
 * ### 무엇인가를 포장해서 다른 용도로 사용할 수 있도록 변환해주는 것이 어댑터
 * ### 클래스를 부품으로써 재사용하고 싶을 떄 
 
