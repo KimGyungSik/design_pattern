@@ -439,7 +439,7 @@ class Sorter {
 * ### '요청'과 '처리'의 분리
   * ### 각각 부품으로 독립시킬 수 있음 -> OCP,SRP 충족
 * ### Template Method, Composite, Command 패턴들이 녹아있음
-  * <img src="https://github.com/user-attachments/assets/33405571-2727-488c-ab1b-ac99f7adc51a">
+  * <img src="https://github.com/user-attachments/assets/33405571-2727-488c-ab1b-ac99f7adc51a" width="500">
   * <img src="https://github.com/user-attachments/assets/3897b0e9-6031-408b-8715-8bfceed9d93b" width="500">
 ---
 
