@@ -22,7 +22,7 @@
 - [Prototype 패턴](#pushpin-prototype-패턴)
 - [Builder 패턴](#pushpin-builder-패턴)
 - [Factory Method 패턴](#pushpin-factory-Method-패턴)
-- [Abstract Factory 패턴](#pushpin-abstract-Factory-패턴)
+- [Abstract Factory 패턴](#pushpin-abstract-factory-패턴)
 > ###  :bookmark: 02. 변경되는 부분을 분리(7)  
 - [Iterator 패턴](#pushpin-iterator-패턴)
 - [Template Method 패턴](#pushpin-template-method-패턴)
@@ -411,7 +411,7 @@ class Sorter {
 ---
 ## :pushpin: Command 패턴
 
-## :star:  여러개의 명렁들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
+## :star:  n개의 명령들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
 
 ![KakaoTalk_20240620_231800819](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd)
 
@@ -422,6 +422,18 @@ class Sorter {
   * ### 즉 내용과 그릇을 동일시 취급하는 Composite패턴과 유사함
 * ### State 패턴과 유사한 점
   * ### 명령어를 클래스로 분리함
+---
+
+## :pushpin: Chain of Responsibility 패턴
+
+## :star:  n개의 처리를 묶어 동적으로 요청을 처리
+
+
+* ### 어떤 요청을 처리할 객체를 고정적으로 결정할 수 없는 경우
+  * ### 해결책 : n개 객체를 연쇄적으로 묶어 차례대로 돌면서 원하는 객체를 결정
+  * ### 책임을 떠넘기는 구조
+* ### '요청'과 '처리'의 분리
+  * ### 각각 부품으로 독립시킬 수 있음 -> OCP,SRP 충족
 ---
 
 ## :pushpin: Observer 패턴
