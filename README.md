@@ -434,6 +434,9 @@ class Sorter {
   * ### 책임을 떠넘기는 구조
 * ### '요청'과 '처리'의 분리
   * ### 각각 부품으로 독립시킬 수 있음 -> OCP,SRP 충족
+* ### Template Method, Composite, Command 패턴들이 녹아있음
+  * 사진
+  * 사진
 ---
 
 ## :pushpin: Observer 패턴
