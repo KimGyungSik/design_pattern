@@ -414,13 +414,13 @@ class Sorter {
 ---
 ## :pushpin: Command 패턴
 
-## :star:  n개의 명령들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
+## :star:  n개의 명령어들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
 
 ![KakaoTalk_20240620_231800819](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd)
 
 
 
-* ### 명령의 집합을 저장해서 관리
+* ### 명령어의 집합을 저장해서 관리
   * ### 명령어들이 스택에 쌓이게 되는데, 같은 타입으로 취급하여 스택에 쌓임
   * ### 즉 내용과 그릇을 동일시 취급하는 Composite패턴과 유사함
 * ### State 패턴과 유사한 점
@@ -431,6 +431,7 @@ class Sorter {
 
 ## :star:  n개의 처리를 묶어 동적으로 요청을 처리
 
+<img src="https://github.com/user-attachments/assets/13b57c99-1a0c-466a-8bfb-ff8e0ecf74be" width="500">
 
 * ### 어떤 요청을 처리할 객체를 고정적으로 결정할 수 없는 경우
   * ### 해결책 : n개 객체를 연쇄적으로 묶어 차례대로 돌면서 원하는 객체를 결정
@@ -438,8 +439,8 @@ class Sorter {
 * ### '요청'과 '처리'의 분리
   * ### 각각 부품으로 독립시킬 수 있음 -> OCP,SRP 충족
 * ### Template Method, Composite, Command 패턴들이 녹아있음
-  * 사진
-  * 사진
+  * <img src="https://github.com/user-attachments/assets/33405571-2727-488c-ab1b-ac99f7adc51a">
+  * <img src="https://github.com/user-attachments/assets/3897b0e9-6031-408b-8715-8bfceed9d93b" width="500">
 ---
 
 ## :pushpin: Observer 패턴
