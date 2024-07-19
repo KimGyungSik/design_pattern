@@ -447,6 +447,7 @@ class Sorter {
 
 ## :star:  문법적 규칙을 클래스화 하여, 일련의 규칙을 통해 언어/문법을 해석하는 패턴
 
+ <img src="https://github.com/user-attachments/assets/f8ec7e5e-45bd-4b57-848b-416ba1e62e37" width="500">
 
 * ### 문법 규칙을 수정하거나 추가할 때 유용
   * ### 새로운 규칙을 추가하거나 기존 규칙을 수정하여 새로운 규칙 추가 가능 / 각 규칙들은 독립적 -> OCP 충족
