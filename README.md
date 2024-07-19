@@ -481,7 +481,7 @@ class Sorter {
 
 ## :star: '복잡한 것'을 '단순'하게 보여주기 위한 패턴
 
-
+<img src="https://github.com/user-attachments/assets/c2e1d528-79a1-484b-8aff-1287e93452d0" width="500">
 
 * ### 외부와 복잡한 내부를 분리
   * ### 외부에선 복잡한 내부 사정을 몰라도 됨 
