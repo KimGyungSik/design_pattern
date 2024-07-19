@@ -3,6 +3,7 @@
 ## :star: 디자인 패턴이란?
   * ### OOP설계를 위한 전체 중 일부 의미 있는 클래스들을 묶은 각각의 집합
   * ### 객체 지향 4대 특성 (캡슐화,상속,추상화,다형성)과 설계 원칙(SOLID)을 기반으로 구현
+  * ### 클래스의 재사용성을 높이는 것 -> OCP 충족하게끔 (확장 open, 변경 close) 
 
 ## :star: 설계도를 볼 때 중요포인트
   * ### 화살표의 방향 
@@ -441,6 +442,20 @@ class Sorter {
 * ### Template Method, Composite, Command 패턴들이 녹아있음
   * <img src="https://github.com/user-attachments/assets/33405571-2727-488c-ab1b-ac99f7adc51a" width="500">
   * <img src="https://github.com/user-attachments/assets/3897b0e9-6031-408b-8715-8bfceed9d93b" width="500">
+---
+## :pushpin: Interpreter 패턴
+
+## :star:  문법적 규칙을 클래스화 하여, 일련의 규칙을 통해 언어/문법을 해석하는 패턴
+
+
+* ### 문법 규칙을 수정하거나 추가할 때 유용
+  * ### 새로운 규칙을 추가하거나 기존 규칙을 수정하여 새로운 규칙 추가 가능 / 각 규칙들은 독립적 -> OCP 충족
+* ### Composite 패턴과 유사 
+  * ### 재귀적 구조를 형성하기 때문에 파싱트리가 형성됨 
+* ### java의 컴파일러, 정규표현식과 spring의 EL태그도 인터프리터 패턴을 적용
+
+
+
 ---
 
 ## :pushpin: Observer 패턴
