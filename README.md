@@ -501,6 +501,7 @@ class Sorter {
 
 ## :star: 복잡한 객체들 간의 통신을 '중재자'를 통해 통신
 
+<img src="https://github.com/user-attachments/assets/039afe08-195c-442b-a659-7b45501b0311" width="500">
 
 * ### 멤버는 모두 중재자에게만 보고하고, 중재자만 멤버에게 지시
   * ### 멤버들 간의 복잡도를 낮추기 위해 중재자를 둠
@@ -518,6 +519,7 @@ class Sorter {
 
 ## :star: 특정 시점의 인스턴스 상태를 저장후 복원 
 
+<img src="https://github.com/user-attachments/assets/5f220fc0-4387-41ad-b175-f23da5adab83" width="500">
 
 * ### 특정 시점의 인스턴스를 복원하기 위해 저장
   * ### 인스턴스의 현재 상태를 저장 -> 특정 시점에 복원
