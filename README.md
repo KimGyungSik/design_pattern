@@ -129,7 +129,7 @@
 
 ## :pushpin: Iterator 패턴
 
-## :star:  for문의 조건식을 이동시켜 반복하는 패턴
+## :star:  반복문의 조건식을 분리(사용 -> 구현)
 
 ![KakaoTalk_20240617_175524879](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/f7c41e6e-7e2c-4f2c-bbff-3af9565d6d99)
 
