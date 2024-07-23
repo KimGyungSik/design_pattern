@@ -150,7 +150,7 @@
 
 ## :pushpin: Abstract Factory 패턴
 
-## :star:  추상적인 '제품'을 추상적인 '부품'으로 분리하여 추상 '팩터리'를 통해 조립 
+## :star:  추상적인 '제품'을 추상적인 '부품'으로 쪼개 추상 '팩터리'를 통해 조립 
 
  <img src="https://github.com/user-attachments/assets/294654b1-fd89-43f9-a16e-b1a934749c0c" width="500">
 
