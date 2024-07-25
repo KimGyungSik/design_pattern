@@ -122,6 +122,8 @@
 
 ## :star: 복잡한 메서드를 조합하여 인스턴스를 구축
 
+ <img src="https://github.com/user-attachments/assets/a41d9624-7b35-4843-b8a5-e88016d9f55c" width="500">
+
 * ### Facade 패턴과 유사
   * ### 복잡한 인스턴스를 생성해주는 간단한 인터페이스를 외부에 제공 -> Builder 패턴
   * ### 복잡한 내부 모듈을 조합하여, 간단한 인터페이스를 외부에 제공 -> Facade 패턴
@@ -134,8 +136,11 @@
 
 ## :star:  상위 클래스에서 인스턴스 생성 방법을 결정,하위 클래스에서 구체화  
 
+ <img src="https://github.com/user-attachments/assets/7c25327f-aaf0-4336-ae6d-4a4f41b5c1eb" width="500">
+
 * ### Template Method 패턴의 확장버전
   * ### 상위 클래스에서 인스턴스 생성을 위한 뼈대(프레임워크)와 실제 인스턴스를 생성하는 하위클래스로 분리
+  * <img src="https://github.com/user-attachments/assets/60449de1-4689-4b50-ab8d-afc5d5207d88" width="500">
   * ### Factory Method 패턴에서는 패키지 단위로 분리 
   * ### 변하지 않는 부분과 변하는 부분을 분리하여 추상 패키지는 1개, 구현 패키지는 n개 -> OCP 충족
 * ### static Factory Method와는 다른 것임 
@@ -145,7 +150,9 @@
 
 ## :pushpin: Abstract Factory 패턴
 
-## :star:  추상적인 '제품'을 추상적인 '부품'으로 분리하여 추상 '팩터리'를 통해 조립 
+## :star:  추상적인 '제품'을 추상적인 '부품'으로 쪼개 추상 '팩터리'를 통해 조립 
+
+ <img src="https://github.com/user-attachments/assets/294654b1-fd89-43f9-a16e-b1a934749c0c" width="500">
 
 * ### Factory Method 패턴의 확장버전
   * ### 복잡한 구조를 가진 인스턴스를 부품으로 쪼개 팩터리에서 인스턴스 생성 방법을 결정
@@ -448,9 +455,8 @@ class Sorter {
 
 ## :star:  n개의 명령어들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
 
-![KakaoTalk_20240620_231800819](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd)
-
-
+<img src="https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd" width="500">
+<img src="https://github.com/user-attachments/assets/4af43980-087d-49c4-b98e-3fee34b4bf8f" width="500">
 
 * ### 명령어의 집합을 저장해서 관리
   * ### 명령어들이 스택에 쌓이게 되는데, 같은 타입으로 취급하여 스택에 쌓임
