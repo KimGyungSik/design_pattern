@@ -455,9 +455,8 @@ class Sorter {
 
 ## :star:  n개의 명령어들을 하나의 타입으로 취급하여, 그것을 객체로 표현하는 패턴
 
-![KakaoTalk_20240620_231800819](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd)
-
-
+<img src="https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/958f82fd-cb71-4b0e-83ad-18310f3cdddd" width="500">
+<img src="https://github.com/user-attachments/assets/4af43980-087d-49c4-b98e-3fee34b4bf8f" width="500">
 
 * ### 명령어의 집합을 저장해서 관리
   * ### 명령어들이 스택에 쌓이게 되는데, 같은 타입으로 취급하여 스택에 쌓임
