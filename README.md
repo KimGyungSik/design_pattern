@@ -519,7 +519,7 @@ class Sorter {
 ---
 ## :pushpin: Facade 패턴
 
-## :star: '복잡한 것'을 '단순'하게 보여주기 위한 패턴
+## :star: '복잡한 것'을 창구를 통해 '단순'하게 보여주기 위한 패턴
 
 <img src="https://github.com/user-attachments/assets/c2e1d528-79a1-484b-8aff-1287e93452d0" width="500">
 
@@ -529,6 +529,7 @@ class Sorter {
   * ### 복잡한 로직을 모아 하나의 클래스에 모은 것 , 클라이언트는 몰라도 되도록 하는 것
     
 * ### Spring Application Context은 Facade패턴으로 만들어짐
+  * ### 복잡한 서브 시스템을 쉽게 사용할 수 있도록 간단하고 통일된 인터페이스를 제공 
 * ### Abstract Factory 패턴과 유사
   * ### '객체를 생성하기 위해서는 이것만 호출하면 OK라는 인터페이스'를 제공하기 때문
   
