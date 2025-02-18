@@ -49,7 +49,8 @@
 
 -----
 
-## :pushpin: Singleton 패턴
+## :pushpin: Singleton 패턴  
+## 더 Deep한 내용이 궁금한다면 ? https://www.notion.so/19eff25b883b80178ff6cbb1168f5d39?pvs=4 
 
 ## :star:  단 하나의 유일한 객체를 만들기 위한 패턴
 * ### 인스턴스 수를 1개로 제한 why? 자원(메모리)을 아끼기 위해서
