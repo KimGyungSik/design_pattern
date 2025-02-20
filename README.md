@@ -134,6 +134,7 @@
 ---
 
 ## :pushpin: Factory Method 패턴
+## 더 Deep한 내용이 궁금한다면 ? https://www.notion.so/19fff25b883b807b9be9e1555c9f2e24?pvs=4
 
 ## :star:  상위 클래스에서 인스턴스 생성 방법을 결정,하위 클래스에서 구체화  
 
