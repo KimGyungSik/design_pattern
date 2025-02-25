@@ -151,6 +151,7 @@
 ---
 
 ## :pushpin: Abstract Factory 패턴
+## 더 Deep한 내용이 궁금하다면 ? https://www.notion.so/1a4ff25b883b800f9e09c86451a8393b?pvs=4
 
 ## :star:  추상적인 '제품'을 추상적인 '부품'으로 쪼개 추상 '팩터리'를 통해 조립 
 
