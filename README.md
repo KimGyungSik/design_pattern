@@ -92,7 +92,7 @@
 
 
 ## :pushpin: Prototype 패턴
-
+## 더 Deep한 내용이 궁금한다면 ? https://www.notion.so/1adff25b883b80559b0deede08261412?pvs=4
 ## :star:  인스턴스를 복사해서 새 인스턴스를 만드는 패턴
 
 ![KakaoTalk_20240617_175524879_01](https://github.com/KimGyungSik/GoF-DP-Practice/assets/139200972/9ac460a2-db8d-4df7-8258-54c5ce708524)
