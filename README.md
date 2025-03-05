@@ -120,6 +120,7 @@
 
 ---
 ## :pushpin: Builder 패턴
+## 더 Deep한 내용이 궁금한다면 ? https://www.notion.so/1acff25b883b804ca1ece045cd65ce1d?pvs=4
 
 ## :star: 복잡한 메서드를 조합하여 인스턴스를 구축
 
