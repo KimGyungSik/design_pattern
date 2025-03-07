@@ -358,6 +358,7 @@ class Sorter {
 ```
 ---
 ## :pushpin: Adapter 패턴
+## 더 Deep한 내용이 궁금한다면 ? https://www.notion.so/1afff25b883b8030a33eccf12e3c7794?pvs=4
 
 ## :star: '이미 제공된 것'과 '필요한 것'사이의 '차이'를 메우는 패턴
 
