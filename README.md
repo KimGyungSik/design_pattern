@@ -3,7 +3,10 @@
 ## :star: 디자인 패턴이란?
   * ### OOP설계를 위한 전체 중 일부 의미 있는 클래스들을 묶은 각각의 집합
   * ### 객체 지향 4대 특성 (캡슐화,상속,추상화,다형성)과 설계 원칙(SOLID)을 기반으로 구현
-  * ### 클래스의 재사용성을 높이는 것 -> OCP 충족하게끔 (확장 open, 변경 close) 
+  * ### 클래스의 재사용성을 높이는 것 -> OCP 충족하게끔 (확장 open, 변경 close)
+
+## :star: 패턴을 선택하는 기준?
+  * ### 그 패턴을 사용하는 목적, 그 패턴으로 해결하려는 문제가 무엇인가를 항상 먼저 생각해봐야함 
 
 ## :star: 설계도를 볼 때 중요포인트
   * ### 화살표의 방향 
@@ -504,7 +507,7 @@ class Sorter {
 ---
 
 ## :pushpin: Observer 패턴
-
+## 더 Deep한 내용이 궁금한다면 ? https://www.notion.so/1b5ff25b883b80a1b967f70dd927341e?pvs=4
 ## :star: 관찰자(Observer)에게 상태 변화를 알려주는 패턴
 
 ![KakaoTalk_20240705_143648590](https://github.com/KimGyungSik/design_pattern/assets/139200972/b4f8e915-51ea-446d-82c7-ed706c33b2cb)
